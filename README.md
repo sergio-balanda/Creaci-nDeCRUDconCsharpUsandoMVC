@@ -30,7 +30,7 @@ no terminado.
 Enable-Migrations -ContextTypeName DataStore -EnableAutomaticMigrations
 ```
 - crea la carpeta migratins con un archivo configuration
-//permita perdida de datos
-AutomaticMigrationDataLossAllowed
-//si hay cambios en la structura global.asax agregar
-Database.SetInitializer(New Migrate...)
+
+AutomaticMigrationDataLossAllowed/ /permita perdida de datos
+
+Database.SetInitializer(New Migrate...) //si hay cambios en la structura global.asax agregar
