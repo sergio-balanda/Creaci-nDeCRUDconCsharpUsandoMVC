@@ -1,0 +1,51 @@
+﻿@model CreaciónDeCRUDconCsharpUsandoMVC.Models.OrderDetail
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_order)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_order)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_articulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_articulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit_price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_orderDetail }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
